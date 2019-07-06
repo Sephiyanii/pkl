@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Vizew - Blog &amp; Magazine HTML Template</title>
+    <title>Sephiyani - Blog &amp; Magazine HTML Template</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -102,65 +102,65 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="archive-list.html">Archives</a></li>
+                                    <li class="active"><a href="/">Home</a></li>
+                                    <li><a href="/archive-list">Archives</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">- Home</a></li>
-                                            <li><a href="archive-list.html">- Archive List</a></li>
-                                            <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                            <li><a href="single-post.html">- Single Post</a></li>
-                                            <li><a href="video-post.html">- Single Video Post</a></li>
-                                            <li><a href="contact.html">- Contact</a></li>
-                                            <li><a href="typography.html">- Typography</a></li>
-                                            <li><a href="login.html">- Login</a></li>
+                                            <li><a href="/">- Home</a></li>
+                                            <li><a href="/archive-list">- Archive List</a></li>
+                                            <li><a href="/archive-grid">- Archive Grid</a></li>
+                                            <li><a href="/single-post">- Single Post</a></li>
+                                            <li><a href="/video-post">- Single Video Post</a></li>
+                                            <li><a href="/contact">- Contact</a></li>
+                                            <li><a href="/typography">- Typography</a></li>
+                                            <li><a href="/login">- Login</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Features</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
+                                                <li><a href="/">- Home</a></li>
+                                                <li><a href="/archive-list">- Archive List</a></li>
+                                                <li><a href="/archive-grid">- Archive Grid</a></li>
+                                                <li><a href="/single-post">- Single Post</a></li>
+                                                <li><a href="/video-post">- Single Video Post</a></li>
+                                                <li><a href="/contact">- Contact</a></li>
+                                                <li><a href="/typography">- Typography</a></li>
+                                                <li><a href="/login">- Login</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
+                                                <li><a href="/">- Home</a></li>
+                                                <li><a href="/archive-list">- Archive List</a></li>
+                                                <li><a href="/archive-grid">- Archive Grid</a></li>
+                                                <li><a href="/single-post">- Single Post</a></li>
+                                                <li><a href="/video-post">- Single Video Post</a></li>
+                                                <li><a href="/contact">- Contact</a></li>
+                                                <li><a href="/typography">- Typography</a></li>
+                                                <li><a href="/login">- Login</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
+                                                <li><a href="/">- Home</a></li>
+                                                <li><a href="/archive-list">- Archive List</a></li>
+                                                <li><a href="/archive-grid">- Archive Grid</a></li>
+                                                <li><a href="/single-post">- Single Post</a></li>
+                                                <li><a href="/video-post">- Single Video Post</a></li>
+                                                <li><a href="/contact">- Contact</a></li>
+                                                <li><a href="/typography">- Typography</a></li>
+                                                <li><a href="/login">- Login</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
+                                                <li><a href="/">- Home</a></li>
+                                                <li><a href="/archive-list">- Archive List</a></li>
+                                                <li><a href="/archive-grid">- Archive Grid</a></li>
+                                                <li><a href="/single-post">- Single Post</a></li>
+                                                <li><a href="/video-post">- Single Video Post</a></li>
+                                                <li><a href="/contact">- Contact</a></li>
+                                                <li><a href="/typography">- Typography</a></li>
+                                                <li><a href="/login">- Login</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->

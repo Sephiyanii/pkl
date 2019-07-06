@@ -24,6 +24,26 @@ Route::get('contact', function () {
     return view('contact');
 });
 
-Route::get('about', function () {
-    return view('about');
+Route::get('archive-grid', function () {
+    return view('archive-grid');
+});
+
+Route::get('archive-list', function () {
+    return view('archive-list');
+});
+
+Route::get('single-post', function () {
+    return view('single-post');
+});
+
+Route::get('typography', function () {
+    return view('typography');
+});
+
+Route::get('video-post', function () {
+    return view('video-post');
+});
+
+Route::get('login', function () {
+    return view('login');
 });

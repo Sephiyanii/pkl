@@ -47,3 +47,13 @@ Route::get('video-post', function () {
 Route::get('login', function () {
     return view('login');
 });
+
+Route::get('instagram', function () {
+    return view('instagram');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/admin/artikel', 'ArtikelController');

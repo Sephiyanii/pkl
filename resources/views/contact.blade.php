@@ -63,13 +63,13 @@
                             </div>
                             <!-- Top Search Area -->
                             <div class="top-search-area">
-                                <form action="index.html" method="post">
+                                <form action="/" method="post">
                                     <input type="search" name="top-search" id="topSearch" placeholder="Search...">
                                     <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </form>
                             </div>
                             <!-- Login -->
-                            <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <a href="/login" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <nav class="classy-navbar justify-content-between" id="vizewNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
+                        <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -102,7 +102,7 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="/index">Home</a></li>
+                                    <li class="active"><a href="/">Home</a></li>
                                     <li><a href="/archive-list">Archives</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">

@@ -63,13 +63,13 @@
                             </div>
                             <!-- Top Search Area -->
                             <div class="top-search-area">
-                                <form action="index.html" method="post">
+                                <form action="/" method="post">
                                     <input type="search" name="top-search" id="topSearch" placeholder="Search...">
                                     <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </form>
                             </div>
                             <!-- Login -->
-                            <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <a href="/login" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <nav class="classy-navbar justify-content-between" id="vizewNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
+                        <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -201,7 +201,7 @@
                             <div class="line"></div>
                         </div>
 
-                        <form action="index.html" method="post">
+                        <form action="/" method="post">
                             <div class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or User Name">
                             </div>
@@ -231,7 +231,7 @@
                 <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-widget mb-70">
                         <!-- Logo -->
-                        <a href="index.html" class="foo-logo d-block mb-4"><img src="{{ asset('assets/frontend/img/core-img/logo2.png')}}" alt=""></a>
+                        <a href="/contact" class="foo-logo d-block mb-4"><img src="{{ asset('assets/frontend/img/core-img/logo2.png')}}" alt=""></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
                         <!-- Footer Newsletter Area -->
                         <div class="footer-nl-area">

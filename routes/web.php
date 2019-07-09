@@ -57,3 +57,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/admin/artikel', 'ArtikelController');
+Route::resource('/admin/kategori', 'KategoriController');

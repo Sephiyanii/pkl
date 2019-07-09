@@ -74,7 +74,7 @@
 
         <main class="py-4">
             @yield('content')
-            @include('backend.artikel.modal')
+
         </main>
     </div>
 

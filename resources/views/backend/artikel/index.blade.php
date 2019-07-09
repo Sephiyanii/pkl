@@ -3,9 +3,9 @@
 
     <div class = "container">
         <h4>Data Artikel</h4>
-        <a href="{{ route ('artikel.create') }}" class="btn btn-outline-primary"data-toggle="modal" data-target="#create">Tambah Data</a>
+        <a href="{{ route ('artikel.create') }}" class="btn btn-outline-primary">Tambah Data</a>
         <p></p>
-       <table class ="table">
+       <table class ="table  table-dark">
             <thead>
                 <tr>
                     <th>No</th>
@@ -31,17 +31,17 @@
              <td>{{ $data->slug }}</td>
               <td>{{ $data->content }}</td>
                <td>{{ $data->tag }}</td>
-                <td>{{ $data->foto }}</td>
+                <td><img src="{{ asset('assets/img/artikel/'.$data->foto)}}" width="15%"</td>
 
-            <td>
-                    <form action="{{ route('artikel.destroy', ['id'=>$data->id]) }}" method="post">
-                    @csrf
-                    $method('delete')
-
-                    <a href="{{ route('artikel.edit', ['id'=>$data->id]) }}" class="btn btn-outline-light">Edit</a>
-                     <a href="{{ route('artikel.edit', ['id'=>$data->id]) }}" class="btn btn-outline-success">Show</a>
+             <td>
+                 <a href="{{ route('artikel.edit', $data->id) }}" class="btn btn-outline-danger">Edit</a></td>
+         <td>
+             <form action="{{ route('artikel.destroy', $data->id) }}" method="POST">
+                 @csrf
+             <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-outline-primary">Hapus</button>
                 </form>
-            </td>
+             </td>
             </tr>
             @endforeach
         </tbody>

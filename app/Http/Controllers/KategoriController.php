@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Artikel;
+use App\Kategori;
 use Session;
 
-class ArtikelController extends Controller
+class KategoriController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class ArtikelController extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::all();
-        return view('backend.artikel.index', compact('artikel'));
+        $kategori = Kategori::all();
+        return view('backend.kategori.index', compact('kategori'));
     }
 
     /**
@@ -26,7 +26,7 @@ class ArtikelController extends Controller
      */
     public function create()
     {
-        return view('backend.artikel.create');
+        return view('backend.kategori.create');
     }
 
     /**
@@ -37,19 +37,15 @@ class ArtikelController extends Controller
      */
     public function store(Request $request)
     {
-        $artikel = new Artikel;
-        $artikel->judul = $request->get('judul');
-        $artikel->slug = $request->get('slug');
-        $artikel->content = $request->get('content');
-        $artikel->tag = $request->get('tag');
-        $artikel->foto = $request->get('foto');
-        $artikel->save();
+        $kategori = new Kategori;
+        $kategori->nama = $request->get('nama');
+        $kategori->save();
 
         Session::flash("flash_notofication", [
             "level" => "success",
-            "message" => "Berhasil menyimpan <b>$artikel->judul</b>"
+            "message" => "Berhasil menyimpan <b>$kategori->nama</b>"
         ]);
-        return redirect()->route('artikel.index');
+        return redirect()->route('kategori.index');
     }
 
     /**
@@ -60,8 +56,8 @@ class ArtikelController extends Controller
      */
     public function show($id)
     {
-        $artikel = Artikel::findOrFail($id);
-        return view('artikel.show', compact('artikel'));
+        $kategori = Kategori::findOrFail($id);
+        return view('kategori.show', compact('kategori'));
     }
 
     /**
@@ -72,8 +68,8 @@ class ArtikelController extends Controller
      */
     public function edit($id)
     {
-        $artikel = Artikel::findOrFail($id);
-        return view('backend.artikel.edit', compact('artikel'));
+        $kategori = Kategori::findOrFail($id);
+        return view('backend.kategori.edit', compact('kategori'));
     }
 
     /**
@@ -85,18 +81,14 @@ class ArtikelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $artikel = Artikel::findOrFail($id);
-        $artikel->judul = $request->judul;
-        $artikel->slug = $request->slug;
-        $artikel->content = $request->content;
-        $artikel->tag = $request->tag;
-        $artikel->foto = $request->foto;
-        $artikel->save();
+        $kategori = Kategori::findOrFail($id);
+        $kategori->nama = $request->nama;
+        $kategori->save();
         Session::flash("flash_notification", [
             "level" => "success",
-            "message" => "Berhasil mengedit <b>$artikel->nama</b>"
+            "message" => "Berhasil mengedit <b>$kategori->nama</b>"
         ]);
-        return redirect()->route('artikel.index');
+        return redirect()->route('kategori.index');
     }
 
     /**
@@ -107,11 +99,11 @@ class ArtikelController extends Controller
      */
     public function destroy($id)
     {
-        $artikel = Artikel::findOrFail($id)->delete();
+        $kategori = Kategori::findOrFail($id)->delete();
         Session::flash("flash_notification", [
             "level" => "success",
             "message" => "Data berhasil dihapus"
         ]);
-        return redirect()->route('artikel.index');
+        return redirect()->route('kategori.index');
     }
 }

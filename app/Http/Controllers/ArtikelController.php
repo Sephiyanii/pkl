@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Artikel;
 use Session;
+use Illuminate\Http\File;
+use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;
 
 class ArtikelController extends Controller
 {
@@ -42,13 +44,27 @@ class ArtikelController extends Controller
         $artikel->slug = $request->get('slug');
         $artikel->content = $request->get('content');
         $artikel->tag = $request->get('tag');
-        $artikel->foto = $request->get('foto');
-        $artikel->save();
+        $artikel->kategori_id = $request->get('kategori_id');
+        #foto
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $path = public_patch() . '_' . $file->getClientOriginalName();
+            $upload = $file->move($path, $filename);
 
-        Session::flash("flash_notofication", [
-            "level" => "success",
-            "message" => "Berhasil menyimpan <b>$artikel->judul</b>"
-        ]);
+            if ($artikel->foto) {
+                $old_foto = $artikel->foto;
+                $filepath = public_path() . '/asset/img/artikel/' . $artikel->foto;
+                try {
+                    File::delete($filepath);
+                } catch (FileNotFoundException $e) {
+                    //Exception $e;
+                }
+            }
+            $artikel->foto = $filename;
+        }
+        $artikel->save();
+        $artikel->tag()->sync($request->tag);
+
         return redirect()->route('artikel.index');
     }
 

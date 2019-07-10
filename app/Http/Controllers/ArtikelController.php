@@ -3,11 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Artikel;
 use Session;
+use App\Artikel;
+use App\Kategori;
+use App\Tag;
+use User;
+use Illuminate\Support\Facades\File;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
+use Auth;
 
 class ArtikelController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +36,9 @@ class ArtikelController extends Controller
      */
     public function create()
     {
-        return view('backend.artikel.create');
+        $tag = Tag::all();
+        $kategori = Kategori::all();
+        return view('backend.artikel.create', compact('tag', 'kategori'));
     }
 
     /**
@@ -38,18 +50,23 @@ class ArtikelController extends Controller
     public function store(Request $request)
     {
         $artikel = new Artikel;
-        $artikel->judul = $request->get('judul');
-        $artikel->slug = $request->get('slug');
-        $artikel->content = $request->get('content');
-        $artikel->tag = $request->get('tag');
-        $artikel->foto = $request->get('foto');
+        $artikel->judul = $request->judul;
+        $artikel->slug = str_slug($request->judul);
+        $artikel->konten = $request->konten;
+        $artikel->user_id = Auth::user()->id;
+        $artikel->categori_id = $request->categori_id;
+        # Foto
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $path = public_path() . '/assets/img/artikel/';
+            $filename = str_random(6) . '_' . $file->getClientOriginalName();
+            $upload = $file->move($path, $filename);
+            $artikel->foto = $filename;
+        }
         $artikel->save();
+        $artikel->tag()->attach($request->tag);
 
-        Session::flash("flash_notofication", [
-            "level" => "success",
-            "message" => "Berhasil menyimpan <b>$artikel->judul</b>"
-        ]);
-        return redirect()->route('kategori.index');
+        return redirect()->route('artikel.index');
     }
 
     /**
@@ -73,7 +90,10 @@ class ArtikelController extends Controller
     public function edit($id)
     {
         $artikel = Artikel::findOrFail($id);
-        return view('backend.artikel.edit', compact('artikel'));
+        $kategori = Kategori::all();
+        $tag = Tag::all();
+        $select = $artikel->tag->pluck('id')->toArray();
+        return view('backend.artikel.edit', compact('artikel', 'kategori', 'tag', 'select'));
     }
 
     /**
@@ -86,16 +106,32 @@ class ArtikelController extends Controller
     public function update(Request $request, $id)
     {
         $artikel = Artikel::findOrFail($id);
+        $artikel = Artikel::findOrFail($id);
         $artikel->judul = $request->judul;
-        $artikel->slug = $request->slug;
-        $artikel->content = $request->content;
-        $artikel->tag = $request->tag;
-        $artikel->foto = $request->foto;
+        $artikel->slug = str_slug($request->judul);
+        $artikel->konten = $request->konten;
+        $artikel->user_id = Auth::user()->id;
+        $artikel->categori_id = $request->categori_id;
+        # Foto
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $path = public_path() . '/assets/img/artikel/';
+            $filename = str_random(6) . '_' . $file->getClientOriginalName();
+            $upload = $file->move($path, $filename);
+            if ($artikel->foto) {
+                $old_foto = $artikel->foto;
+                $filepath = public_path() . '/assets/img/artikel/' . $artikel->foto;
+                try {
+                    File::delete($filepath);
+                } catch (FileNotFoundException $e) {
+                    //Exception $e;
+                }
+            }
+            $artikel->foto = $filename;
+        }
         $artikel->save();
-        Session::flash("flash_notification", [
-            "level" => "success",
-            "message" => "Berhasil mengedit <b>$artikel->nama</b>"
-        ]);
+        $artikel->tag()->sync($request->tag);
+
         return redirect()->route('artikel.index');
     }
 
@@ -107,11 +143,19 @@ class ArtikelController extends Controller
      */
     public function destroy($id)
     {
-        $artikel = Artikel::findOrFail($id)->delete();
-        Session::flash("flash_notification", [
-            "level" => "success",
-            "message" => "Data berhasil dihapus"
-        ]);
+        $artikel = Artikel::findOrFail($id);
+        if ($artikel->foto) {
+            $old_foto = $artikel->foto;
+            $filepath = public_path() . '/assets/img/artikel/' . $artikel->foto;
+            try {
+                File::delete($filepath);
+            } catch (FileNotFoundException $e) {
+                //Exception $e;
+            }
+        }
+        $artikel->tag()->detach($artikel->id);
+        $artikel->delete();
+
         return redirect()->route('artikel.index');
     }
 }

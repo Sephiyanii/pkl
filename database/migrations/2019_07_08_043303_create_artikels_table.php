@@ -18,7 +18,6 @@ class CreateArtikelsTable extends Migration
             $table->string('judul');
             $table->string('slug');
             $table->string('content');
-            $table->string('tag');
             $table->string('foto');
             $table->timestamps();
         });

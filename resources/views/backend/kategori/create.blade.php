@@ -15,8 +15,8 @@
                     <input class="form-control" type="text" name="nama">
                 </div>
                 <div class="form-group">
-                   <button type="submit" class="btn btn-outline-primary">Simpan Data</button>
-                    <a href="{{ route('kategori.index') }}" class="btn btn sm btn-danger">Back</a>
+                   <button type="submit" class="btn btn-outline-info">Simpan Data</button>
+                    <a href="{{ route('kategori.index') }}" class="btn btn-outline-info">Back</a>
                 </div>
                 </form>
                         </div>

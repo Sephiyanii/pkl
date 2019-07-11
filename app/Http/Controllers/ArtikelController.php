@@ -54,7 +54,7 @@ class ArtikelController extends Controller
         $artikel->slug = str_slug($request->judul);
         $artikel->konten = $request->konten;
         $artikel->user_id = Auth::user()->id;
-        $artikel->categori_id = $request->categori_id;
+        $artikel->kategori_id = $request->kategori_id;
         # Foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
@@ -111,7 +111,7 @@ class ArtikelController extends Controller
         $artikel->slug = str_slug($request->judul);
         $artikel->konten = $request->konten;
         $artikel->user_id = Auth::user()->id;
-        $artikel->categori_id = $request->categori_id;
+        $artikel->kategori_id = $request->kategori_id;
         # Foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
@@ -143,7 +143,7 @@ class ArtikelController extends Controller
      */
     public function destroy($id)
     {
-        $artikel = Artikel::findOrFail($id);
+        $artikel = Artikel::findOrFail($id)->delete();
         if ($artikel->foto) {
             $old_foto = $artikel->foto;
             $filepath = public_path() . '/assets/img/artikel/' . $artikel->foto;

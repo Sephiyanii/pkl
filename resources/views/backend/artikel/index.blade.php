@@ -5,7 +5,7 @@
         <h4>Data Artikel</h4>
         <a href="{{ route ('artikel.create') }}" class="btn btn-outline-primary">Tambah Data</a>
         <p></p>
-       <table class ="table table-dark">
+       <table class ="table table-hover table-dark">
             <thead>
                 <tr>
                                         <th scope="col">No</th>
@@ -14,6 +14,7 @@
                                         <th scope="col">Konten</th>
                                         <th scope="col">kategori</th>
                                         <th scope="col">Slug</th>
+                                        <th scope="col">Tag</th>
                                         <th colspan="2" class="text-center">Aksi</th>
                                     </tr>
                                     </thead>
@@ -22,19 +23,26 @@
                                     <tr>
                                         <td>{{ $no++ }}</td>
                                         <td>{{ $data->judul }}</td>
-                                        <td><img  src="{{ asset('assets/img/artikel/'.$data->foto)}}" width="15%"></td>
-                                        <td>{{ $data->konten }}</td>
-                                        <td>{{ $data->kategori}}</td>
-										<td>{{ $data->slug }}</td>
+                                        <td><img  src="{{ asset('assets/img/artikel/'.$data->foto)}}" width="100%"></td>
+                                        <td>{!! $data->konten !!}</td>
+                                        <td>{{ $data->kategori->nama}}</td>
+                                        <td>{{ $data->slug }}</td>
+                                        <td>
+                                            <ol>
+                                                @foreach($data->tag as $isi)
+                                                    <li>{{ $isi->nama }}</li>
+                                                @endforeach
+                                            </ol>
+                                        </td>
                                         <td>
                                             <a href="{{ route('artikel.edit',$data->id) }}"
-                                            class="btn btn-sm btn-success">Edit Data</a>
+                                           class="btn btn-outline-info">Edit Data</a>
                                         </td>
                                         <td>
                                             <form action="{{ route('artikel.destroy',$data->id) }}" method="post">
                                             {{csrf_field()}}
                                                 <input type="hidden" name="_method" value="DELETE">
-                                                <button class="btn btn-sm btn-danger" type="submit">
+                                                <button class="btn btn-outline-info" type="submit">
                                                     Hapus Data
                                                 </button>
                                             </form>
@@ -45,6 +53,7 @@
         </table>
     </div>
     <script>
+
         $(document).ready(function(){
             $.ajaxSetup({
                 headers: {

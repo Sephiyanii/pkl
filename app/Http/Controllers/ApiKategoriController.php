@@ -42,7 +42,16 @@ class ApiKategoriController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $kategori = new Kategori;
+        $kategori->nama = $request->get('nama');
+        $kategori->slug = str_slug($request->nama);
+        $kategori->save();
+
+        Session::flash("flash_notofication", [
+            "level" => "success",
+            "message" => "Berhasil menyimpan <b>$kategori->nama</b>"
+        ]);
+        return response()->json($response, 200);
     }
 
     /**

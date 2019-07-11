@@ -14,11 +14,16 @@ class CreateArtikelsTable extends Migration
     public function up()
     {
         Schema::create('artikels', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('judul');
-            $table->string('slug');
-            $table->string('content');
+            $table->integer('user_id')->unsigned();
+            $table->text('konten');
             $table->string('foto');
+            $table->string('slug');
+            
+            $table->unsignedInteger('kategori_id');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('CASCADE');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

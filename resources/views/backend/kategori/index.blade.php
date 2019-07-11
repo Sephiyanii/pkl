@@ -3,42 +3,49 @@
 
     <div class = "container">
         <h4>Data kategori</h4>
-        <a href="{{ route ('kategori.create') }}" class="btn btn-outline-primary">Tambah Data</a>
+        <a href="{{ route ('kategori.create') }}" class="btn btn-outline-info">Tambah Data</a>
         <p></p>
-       <table class ="table table-dark">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-        <tbody>
-                @php $no =0; @endphp
 
-                @foreach ($kategori as $data)
-                @php
-                $no++
-                @endphp
+                            <div class="table-responsive">
+                                <table class="table table-hover table-dark  ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Nama Kategori</th>
+                                        <th scope="col">Slug</th>
+                                        <th colspan="2" class="text-center">Aksi</th>
+                                    </tr>
+                                    </thead>
+                                    @php $no = 1; @endphp
+                                    @foreach($kategori as $data)
+                                    <tr>
+                                        <td>{{ $no++ }}</td>
+                                        <td>{{ $data->nama }}</td>
+                                        <td>{{ $data->slug }}</td>
+                                        <td>
+                                            <a href="{{ route('kategori.edit',$data->id) }}"
+                                            class="btn btn-outline-info">Edit Data</a>
+                                        </td>
 
-            <tr>
-            <td scope ="row">{{ $no }}</td>
-            <td>{{ $data->nama }}</td>
-
-             <td>
-                 <a href="{{ route('kategori.edit', $data->id) }}" class="btn btn-outline-danger">Edit</a></td>
-         <td>
-             <form action="{{ route('kategori.destroy', $data->id) }}" method="POST">
-                 @csrf
-             <input type="hidden" name="_method" value="DELETE">
-            <button type="submit" class="btn btn-outline-primary">Hapus</button>
-                </form>
-             </td>
-            </tr>
-            @endforeach
-        </tbody>
-        </table>
+                                        <td>
+                                            <form action="{{ route('kategori.destroy',$data->id) }}" method="post">
+                                            {{csrf_field()}}
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <button class="btn btn-outline-info" type="submit">
+                                                    Hapus Data
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
     </div>
+</div>
+
     <script>
         $(document).ready(function(){
             $.ajaxSetup({
@@ -46,7 +53,7 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
-           var alamat="http://sephiyani.herokuapp.com/api/category";
+           var alamat="admin/kategori";
 
            $.ajax({
                url: alamat,
@@ -59,6 +66,7 @@
                            `
                            <tr>
                                 <td>${val.nama}</td>
+                                <td>${val.slug}</td>
                                 <td>
                                     <button type="button" class="btn btn-primary" data-id="${val.id}" data-nama="${val-nama}" >Edit</button>
                                     <button type="button" class="btn btn-danger" data-id="${val.id}">Hapus</button>
@@ -72,7 +80,23 @@
            $('.simpan-kategori').on('click', function (e){
                e.preventDefault();
 
-               var nama = $('.nama').val();
+               var variable_isian_nama = $('input[name="nama"]').val();
+               console.log(variable_isian_nama)
+               $.ajax({
+                   url:alamat,
+                   method: "POST",
+                   dataType: "json",
+                   data: {
+                       nama:variable_isian_nama
+                   },
+                   success: function (berhasil){
+                       alert(berhasil.message)
+                       location.reload();
+                   },
+                   error:function (gagal) {
+            console.log(gagal)
+                   }
+               })
            })
         })
     </script>

@@ -39,6 +39,7 @@ class KategoriController extends Controller
     {
         $kategori = new Kategori;
         $kategori->nama = $request->get('nama');
+        $kategori->slug = str_slug($request->nama);
         $kategori->save();
 
         Session::flash("flash_notofication", [
@@ -83,6 +84,8 @@ class KategoriController extends Controller
     {
         $kategori = Kategori::findOrFail($id);
         $kategori->nama = $request->nama;
+        $kategori->slug = str_slug($request->nama);
+
         $kategori->save();
         Session::flash("flash_notification", [
             "level" => "success",

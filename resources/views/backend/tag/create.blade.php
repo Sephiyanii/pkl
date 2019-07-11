@@ -9,8 +9,8 @@
               <label for="">Nama Tag</label>
               <input type="text" name="nama_tag" id="" class="form-control" >
             </div>
-            <button type="submit" class="btn btn-outline-success">Simpan</button>
-            <a name="" id="" class="btn btn-outline-secondary" href="{{route('tag.index')}}" role="button">Kembali</a>
+            <button type="submit" class="btn btn-outline-info">Simpan</button>
+            <a name="" id="" class="btn btn-outline-info" href="{{route('tag.index')}}" role="button">Kembali</a>
 
 
         </form>

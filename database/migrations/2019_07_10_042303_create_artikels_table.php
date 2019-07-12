@@ -20,7 +20,6 @@ class CreateArtikelsTable extends Migration
             $table->text('konten');
             $table->string('foto');
             $table->string('slug');
-            
             $table->unsignedInteger('kategori_id');
             $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('CASCADE');
             $table->foreign('user_id')->references('id')->on('users');

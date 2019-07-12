@@ -55,7 +55,7 @@ class ArtikelController extends Controller
         $artikel->konten = $request->konten;
         $artikel->user_id = Auth::user()->id;
         $artikel->kategori_id = $request->kategori_id;
-        # Foto
+        # foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $path = public_path() . '/assets/img/artikel/';
@@ -106,13 +106,12 @@ class ArtikelController extends Controller
     public function update(Request $request, $id)
     {
         $artikel = Artikel::findOrFail($id);
-        $artikel = Artikel::findOrFail($id);
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul);
         $artikel->konten = $request->konten;
         $artikel->user_id = Auth::user()->id;
         $artikel->kategori_id = $request->kategori_id;
-        # Foto
+        # foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $path = public_path() . '/assets/img/artikel/';

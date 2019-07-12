@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
               <label for="">Tag</label>
-                <select name="tag[]" class="form-control multiple" multiple>
+                <select name="tag[]" class="form-control " multiple="multiple">
                   @foreach($tag as $data)
                     <option value="{{ $data->id }}">
                       {{ $data->nama }}</option>
@@ -51,5 +51,11 @@
             </div>
         </div>
     </div>
+     <script>
+      $(document).ready(function(){
+          $('#create').select2();
+       });
+    </script>
 </div>
 @endsection
+

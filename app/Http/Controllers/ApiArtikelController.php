@@ -42,7 +42,30 @@ class ApiArtikelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $artikel = new Artikel;
+        $artikel->judul = $request->judul;
+        $artikel->slug = str_slug($request->judul);
+        $artikel->konten = $request->konten;
+        $artikel->user_id = Auth::user()->id;
+        $artikel->kategori_id = $request->kategori_id;
+        # Foto
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $path = public_path() . '/assets/img/artikel/';
+            $filename = str_random(6) . '_' . $file->getClientOriginalName();
+            $upload = $file->move($path, $filename);
+            $artikel->foto = $filename;
+        }
+        $artikel->save();
+        $artikel->tag()->attach($request->tag);
+
+        $response = [
+            'success' => true,
+            'data' => $artikel,
+            'message' => 'Berhasil disimpan'
+        ];
+
+        return response()->json($response, 200);
     }
 
     /**

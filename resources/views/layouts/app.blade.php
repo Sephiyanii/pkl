@@ -15,6 +15,7 @@
     <script>
     CKEDITOR.replace('texteditor');
     </script>
+     <script src="{{ asset('assets/backend/select2-4.0.7/select2-4.0.7.js') }}"></script>
 
 
 `....

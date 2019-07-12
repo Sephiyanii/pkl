@@ -47,10 +47,11 @@ class ApiKategoriController extends Controller
         $kategori->slug = str_slug($request->nama);
         $kategori->save();
 
-        Session::flash("flash_notofication", [
-            "level" => "success",
-            "message" => "Berhasil menyimpan <b>$kategori->nama</b>"
-        ]);
+        $response = [
+            'success' => true,
+            'data' => $kategori,
+            'message' => 'Berhasil disimpan'
+        ];
         return response()->json($response, 200);
     }
 
@@ -96,6 +97,12 @@ class ApiKategoriController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $kategori = Kategori::findOrFail($id)->delete();
+        $response = [
+            'success' => true,
+            'data' => $kategori,
+            'message' => 'Berhasil disimpan'
+        ];
+        return response()->json($response, 200);
     }
 }

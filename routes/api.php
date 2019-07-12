@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['middleware' => ['cors']], function () {
     Route::resource('/siswa', 'SiswaController');
     Route::resource('/sekolah', 'SekolahController');
-    Route::resource('/kategori', 'KategoriController');
+    Route::resource('/category', 'ApiKategoriController');
     Route::resource('/tag', 'ApiTagController');
     Route::resource('/article', 'ApiArtikelController');
 });

@@ -15,7 +15,7 @@
     <script>
     CKEDITOR.replace('texteditor');
     </script>
-     <script src="{{ asset('assets/backend/select2-4.0.7/select2-4.0.7.js') }}"></script>
+     <script src="{{ asset('assets/backend/select2-4.0.7/dist/js/select2.min.js') }}"></script>
 
 
 `....
@@ -25,6 +25,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/backend/select2-4.0.7/dist/css/select2.min.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

@@ -12,6 +12,7 @@
                                         <th scope="col">Judul Artikel</th>
                                         <th scope="col">Foto</th>
                                         <th scope="col">Konten</th>
+                                        <th scope="col">Penulis</th></th>
                                         <th scope="col">kategori</th>
                                         <th scope="col">Slug</th>
                                         <th scope="col">Tag</th>
@@ -25,6 +26,7 @@
                                         <td>{{ $data->judul }}</td>
                                         <td><img  src="{{ asset('assets/img/artikel/'.$data->foto)}}" width="100%"></td>
                                         <td>{!! $data->konten !!}</td>
+                                        <td>{{ $data->user->name}}</td>
                                         <td>{{ $data->kategori->nama}}</td>
                                         <td>{{ $data->slug }}</td>
                                         <td>
@@ -73,6 +75,7 @@ $(document).ready(function() {
         columns: [
                 { data: 'judul', name: 'judul' },
                 { data: 'slug', name: 'slug' },
+                { data: 'konten', name: 'konten' },
                 { data: 'kategori.nama', name: 'kategori.nama' },
                 { data: 'user.name', name: 'user.name' },
                 { data: 'tag', render :  function(tag){
@@ -80,7 +83,7 @@ $(document).ready(function() {
                     }
                 },
                 { data: 'foto', render :  function(foto){
-                        return '<img src="/assets/img/fotoartikel/'+foto+'" style="width:150px; height:100px;" alt="foto">';
+                        return '<img src="/assets/img/foto/artikel/'+foto+'" style="width:150px; height:100px;" alt="foto">';
                     }
                 },
                 { data: 'id', render : function (id) {
@@ -151,11 +154,12 @@ $(document).ready(function() {
                 $("#createData")[0].reset();
 
                 $(document).ready(function() {
-                 $('.tag').select2();
+
             });
             }
         });
     });
+    $('#select22').select2({});
 });
 </script>
     @endsection

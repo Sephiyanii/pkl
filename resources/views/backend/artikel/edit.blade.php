@@ -24,12 +24,12 @@
                     </div>
                      <div class="form-group">
                         <label for="">Content</label>
-                    <input class="form-control" value="{{ $artikel->content }}"
+                    <input class="form-control" value="{{ $artikel->konten }}"
                     type="text" name="content">
                     </div>
                      <div class="form-group">
                         <label for="">Tag</label>
-                   <select name="tag[]" class="form-control " multiple="multiple">
+                   <select id="select22" name="tag[]" class="form-control " multiple="multiple">
                   @foreach($tag as $data)
                     <option value="{{ $data->id }}">
                       {{ $data->nama }}</option>
@@ -52,4 +52,9 @@
         </div>
     </div>
 </div>
+<script>
+      $(document).ready(function(){
+          $('#select22').select2();
+       });
+    </script>
 @endsection

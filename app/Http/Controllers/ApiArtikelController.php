@@ -14,7 +14,7 @@ class ApiArtikelController extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::all();
+        $artikel = Artikel::with('tag', 'kategori')->get();
 
         $response = [
             'success' => true,

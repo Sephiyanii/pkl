@@ -42,8 +42,8 @@ class TagController extends Controller
     public function store(Request $request)
     {
         $tag = new Tag;
-        $tag->nama = $request->nama;
-        $tag->slug = str_slug($request->nama);
+        $tag->nama_tag = $request->nama_tag;
+        $tag->slug = str_slug($request->nama_tag);
         $tag->save();
         return redirect()->route('tag.index');
     }
@@ -81,8 +81,8 @@ class TagController extends Controller
     public function update(Request $request, $id)
     {
         $tag = Tag::findOrFail($id);
-        $tag->nama = $request->nama;
-        $tag->slug = str_slug($request->nama);
+        $tag->nama_tag = $request->nama_tag;
+        $tag->slug = str_slug($request->nama_tag);
         $tag->save();
         return redirect()->route('tag.index');
     }
@@ -96,8 +96,9 @@ class TagController extends Controller
     public function destroy($id)
     {
 
+       
         $tag = Tag::findOrFail($id);
-        $tag->nama;
+        $tag->nama_tag;
         $tag->delete();
         return redirect()->route('tag.index');
     }

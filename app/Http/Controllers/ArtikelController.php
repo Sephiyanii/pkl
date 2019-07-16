@@ -142,10 +142,10 @@ class ArtikelController extends Controller
      */
     public function destroy($id)
     {
-        $artikel = Artikel::findOrFail($id)->delete();
-        if ($artikel->foto) {
+        $artikel = Artikel::findOrFail($id);
+        if($artikel->foto){
             $old_foto = $artikel->foto;
-            $filepath = public_path() . '/assets/img/artikel/' . $artikel->foto;
+            $filepath = public_path().'/assets/img/artikel/'.$artikel->foto;
             try {
                 File::delete($filepath);
             } catch (FileNotFoundException $e) {
@@ -154,7 +154,7 @@ class ArtikelController extends Controller
         }
         $artikel->tag()->detach($artikel->id);
         $artikel->delete();
-
+        
         return redirect()->route('artikel.index');
     }
 }

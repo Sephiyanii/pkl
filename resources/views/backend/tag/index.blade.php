@@ -18,7 +18,7 @@
                                     @foreach($tag as $data)
                                     <tr>
                                         <td>{{ $no++ }}</td>
-                                        <td>{{ $data->nama }}</td>
+                                        <td>{{ $data->nama_tag }}</td>
                                         <td>{{ $data->slug }}</td>
 
                                         <td>

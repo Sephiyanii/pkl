@@ -31,7 +31,7 @@
                 <select id="select22" name="tag[]" class="form-control " multiple="multiple">
                   @foreach($tag as $data)
                     <option value="{{ $data->id }}">
-                      {{ $data->nama }}</option>
+                      {{ $data->nama_tag }}</option>
                         @endforeach
                 </select>
             </div>

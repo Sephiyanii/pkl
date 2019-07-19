@@ -82,31 +82,9 @@
                             <ul class="nav navbar-nav">
                                 <li class="menu-item menu-item-has-children active">
                                     <a href="#">Home</a>
-                                    <ul class="sub-menu children">
-                                        <li><a href="index-01.html">Home 01</a></li>
-                                        <li><a href="index-02.html">Home 02</a></li>
-                                        <li><a href="index-03.html">Home 03</a></li>
-                                        <li><a href="index-04.html">Home 04</a></li>
-                                        <li><a href="index-05.html">Home 05</a></li>
-                                    </ul>
+                                    
                                 </li>
 
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">Features</a>
-                                    <ul class="sub-menu children">
-                                        <li><a href="standard.html">Post Standard</a></li>
-                                        <li><a href="sidebar.html">Post Left Sidebar</a></li>
-                                        <li><a href="image.html">Post Header Image</a></li>
-                                        <li><a href="side-image.html">Post Side Image</a></li>
-                                        <li><a href="/gallery">Post Gallery</a></li>
-                                        <li><a href="video.html">Post Video</a></li>
-                                        <li><a href="audio.html">Post Audio</a></li>
-                                        <li><a href="quote.html">Post Quote</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item"><a href="categories.html">Categories</a></li>
-                                <li class="menu-item"><a href="about.html">About</a></li>
-                                <li class="menu-item"><a href="contact.html">Contact</a></li>
                             </ul><!-- /.navbar-nav -->
                         </div><!-- /.navbar-collapse -->
                     </nav>

@@ -24,8 +24,8 @@ Route::get('contact', function () {
     return view('contact');
 });
 
-Route::get('archive-grid', function () {
-    return view('archive-grid');
+Route::get('about', function () {
+    return view('about');
 });
 
 Route::get('archive-list', function () {
@@ -59,3 +59,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/admin/artikel', 'ArtikelController');
 Route::resource('/admin/kategori', 'KategoriController');
 Route::resource('/admin/tag', 'TagController');
+
+Route::resource('/', 'FrontendController');
+Route::get('/{artikel}', 'FrontendController@detailblog')->name('single');
+Route::get('/news/{artikel}', 'FrontendController@detailblog')->name('single');
+Route::get('/category/{cat}', 'FrontendController@blogcat')->name('category');
+Route::get('/tag/{tag}', 'FrontendController@blogtag')->name('tag');

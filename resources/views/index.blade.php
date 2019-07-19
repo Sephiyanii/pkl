@@ -1,1459 +1,370 @@
-<!DOCTYPE html>
-<html lang="en">
 
+
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sasha - Blogging HTML5 Template</title>
+    <meta name="description" content="Sasha - Blogging HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png') }}">
 
-    <!-- Title -->
-    <title>Sephiyani - Blog &amp; Magazine HTML Template</title>
+    <!-- Import Icon Packs -->
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/elegent-icons.css') }}">
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <!-- Import External Scrpit CSS Files -->
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/owl.carousel.css') }}">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/style.css')}}">
+    <!-- Import Template CSS Files -->
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/themes.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/responsive.css') }}">
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js') }}"></script> -->
+
+    <script src="{{ asset('assets/frontend/assets/js/modernizr-2.8.3.min.js') }}"></script>
 
 </head>
 
+
 <body>
-    <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
 
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-        <!-- Top Header Area -->
-        <div class="top-header-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <!-- Breaking News Widget -->
-                        <div class="breaking-news-area d-flex align-items-center">
-                            <div class="news-title">
-                                <p>Breaking News:</p>
-                            </div>
-                            <div id="breakingNewsTicker" class="ticker">
-                                <ul>
-                                    <li><a href="single-post.html">10 Things Amazon Echo Can Do</a></li>
-                                    <li><a href="single-post.html">Welcome to Colorlib Family.</a></li>
-                                    <li><a href="single-post.html">Boys 'doing well' after Thai</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="top-meta-data d-flex align-items-center justify-content-end">
-                            <!-- Top Social Info -->
-                            <div class="top-social-info">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="/instagram"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                            <!-- Top Search Area -->
-                            <div class="top-search-area">
-                                <form action="/" method="post">
-                                    <input type="search" name="top-search" id="topSearch" placeholder="Search...">
-                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-                            <!-- Login -->
-                            <a href="/login" class="login-btn"><i class="" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="overlay-wrapper">
 
-        <!-- Navbar Area -->
-        <div class="vizew-main-menu" id="sticker">
-            <div class="classy-nav-container breakpoint-off">
+        <header class="masthead">
+            <div class="header-top">
                 <div class="container">
+                    <div class="side-menu-trigger"><span class="trigger-icon"><i class="icon_menu"></i></span></div><!-- /.side-menu-trigger -->
+                    <a class="navbar-brand hidden-xs" href="./"><img src="{{ asset('assets/frontend/images/convers.png') }}" alt="Site Logo"></a>
+                    <div class="menu-search">
+                        <div class="form-trigger"><i class="icon_search"></i></div>
+                        <form action="#">
+                            <input type="text" name="search" id="menu-search" placeholder="Search here..">
+                        </form>
+                    </div>
 
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="vizewNav">
+                    <nav class="sidebar-menu">
+                        <a class="navbar-brand" href="./"><img src="{{ asset('assets/frontend/images/logo2.png') }}" alt="Site Logo"></a>
+                        <span class="menu-close"><i class="icon_close"></i></span>
 
-                        <!-- Nav brand -->
-                        <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <div class="classy-menu">
-
-                            <!-- Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li class="active"><a href="/">Home</a></li>
-                                    <li><a href="/archive-list">Archives</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="/">- Home</a></li>
-                                            <li><a href="/archive-list">- Archive List</a></li>
-                                            <li><a href="/archive-grid">- Archive Grid</a></li>
-                                            <li><a href="/single-post">- Single Post</a></li>
-                                            <li><a href="/video-post">- Single Video Post</a></li>
-                                            <li><a href="/contact">- Contact</a></li>
-                                            <li><a href="/typography">- Typography</a></li>
-                                            <li><a href="/login">- Login</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Features</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">- Home</a></li>
-                                                <li><a href="/archive-list">- Archive List</a></li>
-                                                <li><a href="/archive-grid">- Archive Grid</a></li>
-                                                <li><a href="/single-post">- Single Post</a></li>
-                                                <li><a href="/video-post">- Single Video Post</a></li>
-                                                <li><a href="/contact">- Contact</a></li>
-                                                <li><a href="/typography">- Typography</a></li>
-                                                <li><a href="/login">- Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">- Home</a></li>
-                                                <li><a href="/archive-list">- Archive List</a></li>
-                                                <li><a href="/archive-grid">- Archive Grid</a></li>
-                                                <li><a href="/single-post">- Single Post</a></li>
-                                                <li><a href="/video-post">- Single Video Post</a></li>
-                                                <li><a href="/contact">- Contact</a></li>
-                                                <li><a href="/typography">- Typography</a></li>
-                                                <li><a href="/login">- Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">- Home</a></li>
-                                                <li><a href="/archive-list">- Archive List</a></li>
-                                                <li><a href="/archive-grid">- Archive Grid</a></li>
-                                                <li><a href="/single-post">- Single Post</a></li>
-                                                <li><a href="/video-post">- Single Video Post</a></li>
-                                                <li><a href="/contact">- Contact</a></li>
-                                                <li><a href="/typography">- Typography</a></li>
-                                                <li><a href="/login">- Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="/">- Home</a></li>
-                                                <li><a href="/archive-list">- Archive List</a></li>
-                                                <li><a href="/archive-grid">- Archive Grid</a></li>
-                                                <li><a href="/single-post">- Single Post</a></li>
-                                                <li><a href="/video-post">- Single Video Post</a></li>
-                                                <li><a href="/contact">- Contact</a></li>
-                                                <li><a href="/typography">- Typography</a></li>
-                                                <li><a href="/login">- Login</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="/contact">Contact</a></li>
+                        <ul class="nav navbar-nav">
+                            <li class="menu-item menu-item-has-children active">
+                                <a href="#">Home</a>
+                                <ul class="sub-menu children">
+                                    <li><a href="index-01.html">Home 01</a></li>
+                                    <li><a href="index-02.html">Home 02</a></li>
+                                    <li><a href="index-03.html">Home 03</a></li>
+                                    <li><a href="index-04.html">Home 04</a></li>
+                                    <li><a href="index-05.html">Home 05</a></li>
                                 </ul>
-                            </div>
-                            <!-- Nav End -->
+                            </li>
+
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Features</a>
+                                <ul class="sub-menu children">
+                                    <li><a href="standard.html">Post Standard</a></li>
+                                    <li><a href="sidebar.html">Post Left Sidebar</a></li>
+                                    <li><a href="image.html">Post Header Image</a></li>
+                                    <li><a href="side-image.html">Post Side Image</a></li>
+                                    <li><a href="gallery.html">Post Gallery</a></li>
+                                    <li><a href="video.html">Post Video</a></li>
+                                    <li><a href="audio.html">Post Audio</a></li>
+                                    <li><a href="quote.html">Post Quote</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="categories.html">Categories</a></li>
+                            <li class="menu-item"><a href="about.html">About</a></li>
+                            <li class="menu-item"><a href="contact.html">Contact</a></li>
+                        </ul><!-- /.navbar-nav -->
+
+                        <div class="menu-social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </div><!-- /.menu-social -->
+                    </nav><!-- /.sidebar-menu -->
+                </div><!-- /.container -->
+            </div><!-- /.header-top -->
+
+            <div class="header-bottom">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand visible-xs" href="./"><img src="{{ asset('assets/frontend/images/logo3.png') }}" alt="Site Logo"></a>
                         </div>
+
+                        <div id="main-menu" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item menu-item-has-children active">
+                                    <a href="#">Home</a>
+                                    <ul class="sub-menu children">
+                                        <li><a href="index-01.html">Home 01</a></li>
+                                        <li><a href="index-02.html">Home 02</a></li>
+                                        <li><a href="index-03.html">Home 03</a></li>
+                                        <li><a href="index-04.html">Home 04</a></li>
+                                        <li><a href="index-05.html">Home 05</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Features</a>
+                                    <ul class="sub-menu children">
+                                        <li><a href="standard.html">Post Standard</a></li>
+                                        <li><a href="sidebar.html">Post Left Sidebar</a></li>
+                                        <li><a href="image.html">Post Header Image</a></li>
+                                        <li><a href="side-image.html">Post Side Image</a></li>
+                                        <li><a href="/gallery">Post Gallery</a></li>
+                                        <li><a href="video.html">Post Video</a></li>
+                                        <li><a href="audio.html">Post Audio</a></li>
+                                        <li><a href="quote.html">Post Quote</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="categories.html">Categories</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                            </ul><!-- /.navbar-nav -->
+                        </div><!-- /.navbar-collapse -->
                     </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ##### Header Area End ##### -->
+                </div><!-- /.container -->
+            </div><!-- /.header-bottom -->
+        </header><!-- /.masthead -->
 
-    <!-- ##### Hero Area Start ##### -->
-    <section class="hero--area section-padding-80">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-12 col-md-7 col-lg-8">
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url({{  asset('assets/frontend/img/bg-img/7.jpg')}});">
-                                <!-- Play Button -->
-                                <a href="/video-post" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/8.jpg')}});">
-                                <!-- Play Button -->
-                                <a href="/video-post" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+        <section class="banner-slider banner-slider-01 carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target=".banner-slider-01" data-slide-to="0" class="active"></li>
+                <li data-target=".banner-slider-01" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active background-bg" data-image-src="{{ asset('assets/frontend/images/slider/1.jpg') }}">
+                    <article class="post type-post">
+                        <div class="entry-content">
+                            <div class="overlay">
+                                <div class="inner-content">
+                                    <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
+                                    <h2 class="entry-title"><a href="standard.html">Natural summer</a></h2><!-- /.entry-title -->
+                                    <a href="standard.html" class="btn read-more">Read More</a><!-- /.btn -->
+                                </div><!-- /.inner-content -->
+                            </div><!-- /.overlay -->
+                        </div><!-- /.entry-content -->
+                    </article><!-- /.post -->
+                </div><!-- /.item -->
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="/single-post" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
+                <div class="item background-bg" data-image-src="{{ asset('assets/frontend/images/slider/2.jpg') }}">
+                    <article class="post type-post">
+                        <div class="entry-content">
+                            <div class="overlay">
+                                <div class="inner-content">
+                                    <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
+                                    <h2 class="entry-title"><a href="standard.html">Cruise to Alaska</a></h2><!-- /.entry-title -->
+                                    <a href="standard.html" class="btn read-more">Read More</a><!-- /.btn -->
+                                </div><!-- /.inner-content -->
+                            </div><!-- /.overlay -->
+                        </div><!-- /.entry-content -->
+                    </article><!-- /.post -->
+                </div><!-- /.item -->
+            </div><!-- /.carousel-inner -->
+        </section><!-- /.banner-slider -->
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="post-3" role="tabpanel" aria-labelledby="post-3-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/9.jpg);">
-                                <!-- Play Button -->
-                                <a href="/video-post" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
+        <section class="main-content">
+            <div class="padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="default-posts">
+                                <article class="post type-post col-sm-6 full-width">
+                                    <div class="entry-thumbnail"><img src="{{ asset('assets/frontend/images/posts/01/1.jpg') }}" alt="Thumbnail Image"></div><!-- /.entry-thumbnail -->
+                                    <div class="entry-content">
+                                        <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
+                                        <h2 class="entry-title"><a href="standard.html">Cruise to Alaska</a></h2><!-- /.entry-title -->
+                                        <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
+                                        <p>
+                                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quisma bibendum auctor, nisi sequat ipsum, necsagittis emnibh idelit. Duis sed odio sit amet nibh vulputate cursus amet mauris. Morbi acumsan ipsum velit. Nam nec tellusb adio tin cidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit 
+                                        </p>
 
-                        <div class="tab-pane fade" id="post-4" role="tabpanel" aria-labelledby="post-4-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg);">
-                                <!-- Play Button -->
-                                <a href="/video-post" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                        <a href="standard.html" class="btn">Read more</a><!-- /.btn -->
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="/single-post" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
+                                        <div class="post-meta">
+                                            <span class="comments pull-left"><i class="icon_comment_alt"></i> <a href="#">4 Comments</a></span><!-- /.comments -->
+                                            <span class="post-social pull-right">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                            </span><!-- /.post-social -->
+                                        </div><!-- /.post-meta -->
+                                    </div><!-- /.entry-content -->
+                                </article><!-- /.post -->
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
+                            @foreach($artikel as $data)
+                                <article class="post type-post col-sm-6">
+                                    <div class="entry-thumbnail"><img src="{{ asset('assets/img/artikel/'.$data->foto)}}" alt="Thumbnail Image"></div><!-- /.entry-thumbnail -->
+                                    <div class="entry-content">
+                                        <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
+                                        <h2 class="entry-title"><a href="standard.html">{{ $data->judul }}</a></h2><!-- /.entry-title -->
+                                        <p>
+                                           {!! $data->konten !!}
+                                        </p>
+                                        <a href="standard.html" class="btn">Read more</a><!-- /.btn -->
+                                    </div><!-- /.entry-content -->
+                                </article><!-- /.post -->
+                                @endforeach
+                            </div><!-- /.default-posts -->
 
-                        <div class="tab-pane fade" id="post-5" role="tabpanel" aria-labelledby="post-5-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            <nav class="pagination pagination-01">
+                               <a href="#" class="previous-page hidden pull-left"><i class="fa fa-angle-double-left"></i> Previous Posts </a>
+                               <a href="#" class="next-page pull-right">Older Posts <i class="fa fa-angle-double-right"></i></a>
+                           </nav><!-- /.pagination -->
+                       </div>
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
+                       <div class="col-sm-4">
+                        <aside class="sidebar text-center">
+                            <div class="widget widget_about_author">
+                                <h3 class="widget-title">About me</h3><!-- /.widget-title -->
+                                <div class="widget-details">
+                                    <div class="author-avatar"><img src="{{ asset('assets/frontend/images/sidebar/a.jpg') }}" alt="Avatar" class="img-circle"></div><!-- /.author-avatar -->
+                                    <p>
+                                        Ahasellus rhoncus laoreet odio, sit amet rutrum metus aliquet quis. Sed sed nulla erat. Curabitur ullamcorper dum tortor.
+                                    </p>
+                                    <div class="author-social">
+                                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </div><!-- /.author-social -->
+                                </div><!-- /.widget-details -->
+                            </div><!-- /.widget -->
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="post-6" role="tabpanel" aria-labelledby="post-6-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="post-7" role="tabpanel" aria-labelledby="post-7-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-5 col-lg-4">
-                    <ul class="nav vizew-nav-tab" role="tablist">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" id="post-1-tab" data-toggle="pill" href="#post-1" role="tab" aria-controls="post-1" aria-selected="true">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/3.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">Boys 'doing well' after Thai cave rescue</h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 25</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 11</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 19</span>
+                            <div class="widget widget_newsletter">
+                                <h3 class="widget-title">Newsletter</h3><!-- /.widget-title -->
+                                <div class="widget-details">
+                                    <form class="mc4wp-form" method="post">
+                                        <div class="mc4wp-form-fields"> 
+                                            <input class="form-control" type="email" name="EMAIL" placeholder="Email Address" required="">
+                                            <input type="submit" class="form-control" name="submit" value="Subscribe">
                                         </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                                        <div class="mc4wp-response"></div>
+                                    </form>
+                                </div><!-- /.widget-details -->
+                            </div><!-- /.widget -->
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-2-tab" data-toggle="pill" href="#post-2" role="tab" aria-controls="post-2" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/4.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                            <div class="widget widget_insta_feed">
+                                <h3 class="widget-title">Instagram</h3><!-- /.widget-title -->
+                                <div class="widget-details">
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/1.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/2.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/3.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/4.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/5.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/6.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/7.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/8.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/9.jpg') }}" alt="Instagram Image"></a>
+                                </div><!-- /.widget-details -->
+                            </div><!-- /.widget -->
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-3-tab" data-toggle="pill" href="#post-3" role="tab" aria-controls="post-3" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/5.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">Pogba dedicates France win to Thai cave boys</h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                            <div class="widget widget_recent_posts">
+                                <h3 class="widget-title">Recent Posts</h3><!-- /.widget-title -->
+                                <div class="widget-details">
+                                    <article class="post type-post media">
+                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a1.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
+                                        <div class="entry-content media-body">
+                                            <h3 class="entry-title"><a href="standard.html">Good morning World</a></h3><!-- /.entry-title -->
+                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
+                                        </div><!-- /.entry-content -->
+                                    </article><!-- /.post -->
+                                    <article class="post type-post media">
+                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a2.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
+                                        <div class="entry-content media-body">
+                                            <h3 class="entry-title"><a href="standard.html">Hitchhog is dangerous?</a></h3><!-- /.entry-title -->
+                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
+                                        </div><!-- /.entry-content -->
+                                    </article><!-- /.post -->
+                                    <article class="post type-post media">
+                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a3.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
+                                        <div class="entry-content media-body">
+                                            <h3 class="entry-title"><a href="standard.html">Dream on Zanzibar</a></h3><!-- /.entry-title -->
+                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
+                                        </div><!-- /.entry-content -->
+                                    </article><!-- /.post -->
+                                    <article class="post type-post media">
+                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a4.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
+                                        <div class="entry-content media-body">
+                                            <h3 class="entry-title"><a href="standard.html">Happy Road Trip</a></h3><!-- /.entry-title -->
+                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
+                                        </div><!-- /.entry-content -->
+                                    </article><!-- /.post -->
+                                </div><!-- /.widget-details -->
+                            </div><!-- /.widget -->
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-4-tab" data-toggle="pill" href="#post-4" role="tab" aria-controls="post-4" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/6.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">How the world reacted to PM's Brexit crisis</h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 24</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 98</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 63</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                            <div class="widget widget_ad">
+                                <div class="widget-details">
+                                    <a href="#" class="ad-banner"><img src="{{ asset('assets/frontend/images/sidebar/ad.jpg') }}" alt="Ad Banner"></a>
+                                </div><!-- /.widget-details -->
+                            </div><!-- /.widget -->
+                        </aside><!-- /.sidebar -->
+                    </div> 
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.padding -->
+    </section><!-- /.main-content -->
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-5-tab" data-toggle="pill" href="#post-5" role="tab" aria-controls="post-5" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/4.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-6-tab" data-toggle="pill" href="#post-6" role="tab" aria-controls="post-6" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/6.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">How the world reacted to PM's Brexit crisis</h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 24</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 98</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 63</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-7-tab" data-toggle="pill" href="#post-7" role="tab" aria-controls="post-7" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/4.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+    <section class="section-widget">
+        <div class="widget widget_insta_feed">
+            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/1.jpg') }}" alt="Instagram Image"></a></div>
+            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/2.jpg') }}" alt="Instagram Image"></a></div>
+            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/3.jpg') }}" alt="Instagram Image"></a></div>
+            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/4.jpg') }}" alt="Instagram Image"></a></div>
+            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/5.jpg') }}" alt="Instagram Image"></a></div>
+            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/6.jpg') }}" alt="Instagram Image"></a></div>
+        </div><!-- /.widget -->
+    </section><!-- /.section-widget -->
 
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Hero Area End ##### -->
 
-    <!-- ##### Trending Posts Area Start ##### -->
-    <section class="trending-posts-area">
+
+    <footer class="site-footer colophon">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading -->
-                    <div class="section-heading">
-                        <h4>Trending Videos</h4>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Blog Post -->
-                <div class="col-12 col-md-4">
-                    <div class="single-post-area mb-80">
-                        <!-- Post Thumbnail -->
-                        <div class="post-thumbnail">
-                            <img src="{{ asset('assets/frontend/img/bg-img/11.jpg')}}" alt="">
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                            <a href="single-post.html" class="post-title">Warner Bros. Developing ‘The accountant’ Sequel</a>
-                            <div class="post-meta d-flex">
-                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
-                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-3">
+                    <a href="./" class="footer-logo pull-left"><img src="{{ asset('assets/frontend/images/logo4.png') }}" alt="Logo"></a><!-- /.footer-logo -->
                 </div>
 
-                <!-- Single Blog Post -->
-                <div class="col-12 col-md-4">
-                    <div class="single-post-area mb-80">
-                        <!-- Post Thumbnail -->
-                        <div class="post-thumbnail">
-                            <img src="{{ asset('assets/frontend/img/bg-img/12.jpg')}}" alt="">
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                            <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminste Bridge</a>
-                            <div class="post-meta d-flex">
-                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="col-12 col-md-4">
-                    <div class="single-post-area mb-80">
-                        <!-- Post Thumbnail -->
-                        <div class="post-thumbnail">
-                            <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}" alt="">
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                            <a href="single-post.html" class="post-title">Love Island star's boyfriend found dead after her funeral</a>
-                            <div class="post-meta d-flex">
-                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- ##### Trending Posts Area End ##### -->
-
-    <!-- ##### Vizew Post Area Start ##### -->
-    <section class="vizew-post-area mb-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-7 col-lg-8">
-                    <div class="all-posts-area">
-                        <!-- Section Heading -->
-                        <div class="section-heading style-2">
-                            <h4>Featured Videos</h4>
-                            <div class="line"></div>
-                        </div>
-
-                        <!-- Featured Post Slides -->
-                        <div class="featured-post-slides owl-carousel mb-30">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/14.jpg')}});">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/7.jpg')}});">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-md-6">
-                                <div class="single-post-area mb-80">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/12.jpg')}}" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminste Bridge</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-md-6">
-                                <div class="single-post-area mb-80">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                        <a href="single-post.html" class="post-title">Love Island star's boyfriend found dead after her funeral</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <!-- Section Heading -->
-                                <div class="section-heading style-2">
-                                    <h4>Sport Videos</h4>
-                                    <div class="line"></div>
-                                </div>
-
-                                <!-- Sports Video Slides -->
-                                <div class="sport-video-slides owl-carousel mb-50">
-                                    <!-- Single Blog Post -->
-                                    <div class="single-post-area">
-                                        <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail">
-                                            <img src="{{ asset('assets/frontend/img/bg-img/15.jpg')}}" alt="">
-
-                                            <!-- Video Duration -->
-                                            <span class="video-duration">05.03</span>
-                                        </div>
-
-                                        <!-- Post Content -->
-                                        <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                            <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminster Bridge</a>
-                                            <div class="post-meta d-flex">
-                                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single Blog Post -->
-                                    <div class="single-post-area">
-                                        <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail">
-                                            <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}" alt="">
-
-                                            <!-- Video Duration -->
-                                            <span class="video-duration">05.03</span>
-                                        </div>
-
-                                        <!-- Post Content -->
-                                        <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                            <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminster Bridge</a>
-                                            <div class="post-meta d-flex">
-                                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <!-- Section Heading -->
-                                <div class="section-heading style-2">
-                                    <h4>Business Videos</h4>
-                                    <div class="line"></div>
-                                </div>
-
-                                <!-- Business Video Slides -->
-                                <div class="business-video-slides owl-carousel mb-50">
-                                    <!-- Single Blog Post -->
-                                    <div class="single-post-area">
-                                        <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail">
-                                            <img src="{{ asset('assets/frontend/img/bg-img/17.jpg')}}" alt="">
-
-                                            <!-- Video Duration -->
-                                            <span class="video-duration">05.03</span>
-                                        </div>
-
-                                        <!-- Post Content -->
-                                        <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                            <a href="single-post.html" class="post-title">Full article Prince Charles's 'urgent' global research</a>
-                                            <div class="post-meta d-flex">
-                                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single Blog Post -->
-                                    <div class="single-post-area">
-                                        <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail">
-                                            <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}" alt="">
-
-                                            <!-- Video Duration -->
-                                            <span class="video-duration">05.03</span>
-                                        </div>
-
-                                        <!-- Post Content -->
-                                        <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                            <a href="single-post.html" class="post-title">Full article Prince Charles's 'urgent' global research</a>
-                                            <div class="post-meta d-flex">
-                                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-30">
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-lg-6">
-                                <div class="single-blog-post style-3 d-flex mb-50">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/16.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <a href="single-post.html" class="post-title">Epileptic boy's cannabis let through border</a>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-lg-6">
-                                <div class="single-blog-post style-3 d-flex mb-50">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/18.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <a href="single-post.html" class="post-title">Paramedics 'drilled into boat death woman'</a>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-lg-6">
-                                <div class="single-blog-post style-3 d-flex mb-50">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/19.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <a href="single-post.html" class="post-title">Tory vice-chairs quit over PM's Brexit plan</a>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-lg-6">
-                                <div class="single-blog-post style-3 d-flex mb-50">
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/20.jpg')}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <a href="single-post.html" class="post-title">Do This One Simple Action for an Absolutely</a>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section Heading -->
-                        <div class="section-heading style-2">
-                            <h4>Latest News</h4>
-                            <div class="line"></div>
-                        </div>
-
-                        <!-- Featured Post Slides -->
-                        <div class="featured-post-slides owl-carousel mb-30">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/14.jpg')}});">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url({{ asset('assets/frontend/img/bg-img/7.jpg')}});">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-                        <!-- Single Post Area -->
-                        <div class="single-post-area mb-30">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/21.jpg')}}" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Content -->
-                                    <div class="post-content mt-0">
-                                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                        <a href="single-post.html" class="post-title mb-2">May fights on after Johnson savages Brexit approach</a>
-                                        <div class="post-meta d-flex align-items-center mb-2">
-                                            <a href="#" class="post-author">By Jane</a>
-                                            <i class="fa fa-circle" aria-hidden="true"></i>
-                                            <a href="#" class="post-date">Sep 08, 2018</a>
-                                        </div>
-                                        <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post Area -->
-                        <div class="single-post-area mb-30">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/22.jpg')}}" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Content -->
-                                    <div class="post-content mt-0">
-                                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                        <a href="single-post.html" class="post-title mb-2">Thailand cave rescue: Boys 'doing well' after spending night</a>
-                                        <div class="post-meta d-flex align-items-center mb-2">
-                                            <a href="#" class="post-author">By Jane</a>
-                                            <i class="fa fa-circle" aria-hidden="true"></i>
-                                            <a href="#" class="post-date">Sep 08, 2018</a>
-                                        </div>
-                                        <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post Area -->
-                        <div class="single-post-area mb-30">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/23.jpg')}}" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Content -->
-                                    <div class="post-content mt-0">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                        <a href="single-post.html" class="post-title mb-2">Theresa May battles Brexiteer backlash amid disquiet</a>
-                                        <div class="post-meta d-flex align-items-center mb-2">
-                                            <a href="#" class="post-author">By Jane</a>
-                                            <i class="fa fa-circle" aria-hidden="true"></i>
-                                            <a href="#" class="post-date">Sep 08, 2018</a>
-                                        </div>
-                                        <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post Area -->
-                        <div class="single-post-area mb-30">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{ asset('assets/frontend/img/bg-img/24.jpg')}}" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <!-- Post Content -->
-                                    <div class="post-content mt-0">
-                                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                        <a href="single-post.html" class="post-title mb-2">Theresa May warned Brexit strategy 'risks putting Jeremy Corbyn</a>
-                                        <div class="post-meta d-flex align-items-center mb-2">
-                                            <a href="#" class="post-author">By Jane</a>
-                                            <i class="fa fa-circle" aria-hidden="true"></i>
-                                            <a href="#" class="post-date">Sep 08, 2018</a>
-                                        </div>
-                                        <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-5 col-lg-4">
-                    <div class="sidebar-area">
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget followers-widget mb-50">
-                            <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span class="counter">198</span><span>Fan</span></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span class="counter">220</span><span>Followers</span></a>
-                            <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i><span class="counter">140</span><span>Subscribe</span></a>
-                        </div>
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget latest-video-widget mb-50">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2 mb-30">
-                                <h4>Latest Video</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-post-area mb-30">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/13.jpg')}}" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                    <a href="single-post.html" class="post-title">Full article Prince Charles's 'urgent' global research</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/1.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 08</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 23</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/2.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">Sweet Yummy Chocolatea Tea</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 17</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 33</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 26</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/35.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 11</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 21</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget add-widget mb-50">
-                            <a href="#"><img src="{{ asset('assets/frontend/img/bg-img/add.png')}}" alt=""></a>
-                        </div>
-
-                        <!-- ***** Sidebar Widget ***** -->
-                        <div class="single-widget youtube-channel-widget mb-50">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2 mb-30">
-                                <h4>Hot Channels</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex align-items-center">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/25.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">Music Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex align-items-center">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/26.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">Trending Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex align-items-center">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/27.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">Travel Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex align-items-center">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/28.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">Sport Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex align-items-center">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/29.jpg')}}" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">TV Show Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget newsletter-widget mb-50">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2 mb-30">
-                                <h4>Newsletter</h4>
-                                <div class="line"></div>
-                            </div>
-                            <p>Subscribe our newsletter gor get notification about new updates, information discount, etc.</p>
-                            <!-- Newsletter Form -->
-                            <div class="newsletter-form">
-                                <form action="#" method="post">
-                                    <input type="email" name="nl-email" class="form-control mb-15" id="emailnl" placeholder="Enter your email">
-                                    <button type="submit" class="btn vizew-btn w-100">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget mb-50">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2 mb-30">
-                                <h4>Most Viewed Playlist</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/1.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/2.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/36.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">Sweet Yummy Chocolate in the</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/37.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/38.jpg')}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Vizew Psot Area End ##### -->
-
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <!-- Logo -->
-                        <a href="index.html" class="foo-logo d-block mb-4"><img src="{{ asset('assets/frontend/img/core-img/logo2.png')}}" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                        <!-- Footer Newsletter Area -->
-                        <div class="footer-nl-area">
-                            <form action="#" method="post">
-                                <input type="email" name="nl-email" class="form-control" id="nlEmail" placeholder="Your email">
-                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Latest Twister</h6>
-                        <!-- Twitter Slides -->
-                        <div class="twitter-slides owl-carousel">
-
-                            <!-- Single Twitter Slide -->
-                            <div class="single--twitter-slide">
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                            </div>
-
-                            <!-- Single Twitter Slide -->
-                            <div class="single--twitter-slide">
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Sport Videos</h6>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="{{ asset('assets/frontend/img/bg-img/1.jpg')}}" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">DC Shoes: gymkhana the</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="{{ asset('assets/frontend/img/bg-img/2.jpg')}}" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">Sweet Yummy Chocolatea Tea</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Our Address</h6>
-                        <!-- Contact Address -->
-                        <div class="contact-address">
-                            <p>101 E 129th St, East Chicago, <br>IN 46312, US</p>
-                            <p>Phone: 001-1234-88888</p>
-                            <p>Email: info.colorlib@gmail.com</p>
-                        </div>
-                        <!-- Footer Social Area -->
-                        <div class="footer-social-area">
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copywrite Area -->
-        <div class="copywrite-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Copywrite Text -->
-                    <div class="col-12 col-sm-6">
-                        <p class="copywrite-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="col-sm-6">
+                    <div class="copyright text-center">
+                        © <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="#">Advertise</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Privacy</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div><!-- /.copyright -->
                 </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ##### Footer Area End ##### -->
 
-    <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <script src="{{ asset('assets/frontend/js/jquery/jquery-2.2.4.min.js') }}"></script>
-    <!-- Popper js -->
-    <script src="{{ asset('assets/frontend/js/bootstrap/popper.min.js') }}"></script>
-    <!-- Bootstrap js -->
-    <script src="{{ asset('assets/frontend/js/bootstrap/bootstrap.min.js') }}"></script>
-    <!-- All Plugins js -->
-    <script src="{{ asset('assets/frontend/js/plugins/plugins.js') }}"></script>
-    <!-- Active js -->
-    <script src="{{ asset('assets/frontend/js/active.js') }}"></script>
+                <div class="col-sm-3">
+                    <div class="footer-social pull-right">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    </div><!-- /.footer-social -->
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </footer><!-- /.site-footer -->
+
+</div><!-- /.overlay -->
+
+<script src="{{ asset('assets/frontend/assets/js/plugins.js') }}"></script>
+<script src="{{ asset('assets/frontend/assets/js/main.js') }}"></script>
 </body>
-
 </html>

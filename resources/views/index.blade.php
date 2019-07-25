@@ -216,11 +216,11 @@
                             <div class="widget widget_insta_feed">
                                 <h3 class="widget-title">Instagram</h3><!-- /.widget-title -->
                                 <div class="widget-details">
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/1.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/2.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/3.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/4.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/5.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/Converseee.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/10.jfif') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/offwhite.png') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/marii.jpg') }}" alt="Instagram Image"></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/11.jpg') }}" alt="Instagram Image"></a>
                                     <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/6.jpg') }}" alt="Instagram Image"></a>
                                     <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/7.jpg') }}" alt="Instagram Image"></a>
                                     <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/8.jpg') }}" alt="Instagram Image"></a>
@@ -232,10 +232,10 @@
                                 <h3 class="widget-title">Recent Posts</h3><!-- /.widget-title -->
                                 <div class="widget-details">
                                     <article class="post type-post media">
-                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a1.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
+                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/Converseee.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
                                         <div class="entry-content media-body">
-                                            <h3 class="entry-title"><a href="standard.html">Good morning World</a></h3><!-- /.entry-title -->
-                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
+                                            <h3 class="entry-title"><a href="standard.html">CONVERSE</a></h3><!-- /.entry-title -->
+                                            <span class="time"><time datetime="2017-12-05">May 12, 2017 @sephiyani_</time></span><!-- /.time -->
                                         </div><!-- /.entry-content -->
                                     </article><!-- /.post -->
                                     <article class="post type-post media">

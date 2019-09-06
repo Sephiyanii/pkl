@@ -1,324 +1,304 @@
-
-
-<!doctype html>
-<html class="no-js" lang="">
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shoppers &mdash; Colorlib e-Commerce Template</title>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sasha - Blogging HTML5 Template</title>
-    <meta name="description" content="Sasha - Blogging HTML5 Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Import Icon Packs -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/elegent-icons.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+    <link rel="stylesheet" href="{{ asset('assets/frontend/fonts/icomoon/style.css')}}">
 
-    <!-- Import External Scrpit CSS Files -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/owl.carousel.css') }}">
-
-    <!-- Import Template CSS Files -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/themes.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/responsive.css') }}">
-
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js') }}"></script> -->
-
-    <script src="{{ asset('assets/frontend/assets/js/modernizr-2.8.3.min.js') }}"></script>
-
-</head>
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/owl.theme.default.min.css')}}">
 
 
-<body>
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/aos.css')}}">
 
-    <div class="overlay-wrapper">
-
-        <header class="masthead">
-            <div class="header-top">
-                <div class="container">
-                    <div class="side-menu-trigger"><span class="trigger-icon"><i class="icon_menu"></i></span></div><!-- /.side-menu-trigger -->
-                    <a class="navbar-brand hidden-xs" href="./"><img src="{{ asset('assets/frontend/images/convers.png') }}" alt="Site Logo"></a>
-                    <div class="menu-search">
-                        <div class="form-trigger"><i class="icon_search"></i></div>
-                        <form action="#">
-                            <input type="text" name="search" id="menu-search" placeholder="Search here..">
-                        </form>
-                    </div>
-
-                    <nav class="sidebar-menu">
-                        <a class="navbar-brand" href="./"><img src="{{ asset('assets/frontend/images/logo2.png') }}" alt="Site Logo"></a>
-                        <span class="menu-close"><i class="icon_close"></i></span>
-
-                        <ul class="nav navbar-nav">
-                            <li class="menu-item menu-item-has-children active">
-                                <a href="#">Home</a>
-                            </li>
-                        </ul><!-- /.navbar-nav -->
-
-                        <div class="menu-social">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
-                        </div><!-- /.menu-social -->
-                    </nav><!-- /.sidebar-menu -->
-                </div><!-- /.container -->
-            </div><!-- /.header-top -->
-
-            <div class="header-bottom">
-                <div class="container">
-                    <nav class="navbar navbar-default">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <a class="navbar-brand visible-xs" href="./"><img src="{{ asset('assets/frontend/images/logo3.png') }}" alt="Site Logo"></a>
-                        </div>
-
-                        <div id="main-menu" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="menu-item menu-item-has-children active">
-                                    <a href="#">Home</a>
-                                    
-                                </li>
-
-                            </ul><!-- /.navbar-nav -->
-                        </div><!-- /.navbar-collapse -->
-                    </nav>
-                </div><!-- /.container -->
-            </div><!-- /.header-bottom -->
-        </header><!-- /.masthead -->
-
-
-
-        <section class="banner-slider banner-slider-01 carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target=".banner-slider-01" data-slide-to="0" class="active"></li>
-                <li data-target=".banner-slider-01" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active background-bg" data-image-src="{{ asset('assets/frontend/images/slider/1.jpg') }}">
-                    <article class="post type-post">
-                        <div class="entry-content">
-                            <div class="overlay">
-                                <div class="inner-content">
-                                    <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
-                                    <h2 class="entry-title"><a href="standard.html">Natural summer</a></h2><!-- /.entry-title -->
-                                    <a href="standard.html" class="btn read-more">Read More</a><!-- /.btn -->
-                                </div><!-- /.inner-content -->
-                            </div><!-- /.overlay -->
-                        </div><!-- /.entry-content -->
-                    </article><!-- /.post -->
-                </div><!-- /.item -->
-
-                <div class="item background-bg" data-image-src="{{ asset('assets/frontend/images/slider/2.jpg') }}">
-                    <article class="post type-post">
-                        <div class="entry-content">
-                            <div class="overlay">
-                                <div class="inner-content">
-                                    <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
-                                    <h2 class="entry-title"><a href="standard.html">Cruise to Alaska</a></h2><!-- /.entry-title -->
-                                    <a href="standard.html" class="btn read-more">Read More</a><!-- /.btn -->
-                                </div><!-- /.inner-content -->
-                            </div><!-- /.overlay -->
-                        </div><!-- /.entry-content -->
-                    </article><!-- /.post -->
-                </div><!-- /.item -->
-            </div><!-- /.carousel-inner -->
-        </section><!-- /.banner-slider -->
-
-
-
-        <section class="main-content">
-            <div class="padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="default-posts">
-                                <article class="post type-post col-sm-6 full-width">
-                                    <div class="entry-thumbnail"><img src="{{ asset('assets/frontend/images/posts/01/1.jpg') }}" alt="Thumbnail Image"></div><!-- /.entry-thumbnail -->
-                                    <div class="entry-content">
-                                        <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
-                                        <h2 class="entry-title"><a href="standard.html">Cruise to Alaska</a></h2><!-- /.entry-title -->
-                                        <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
-                                        <p>
-                                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quisma bibendum auctor, nisi sequat ipsum, necsagittis emnibh idelit. Duis sed odio sit amet nibh vulputate cursus amet mauris. Morbi acumsan ipsum velit. Nam nec tellusb adio tin cidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit 
-                                        </p>
-
-                                        <a href="standard.html" class="btn">Read more</a><!-- /.btn -->
-
-                                        <div class="post-meta">
-                                            <span class="comments pull-left"><i class="icon_comment_alt"></i> <a href="#">4 Comments</a></span><!-- /.comments -->
-                                            <span class="post-social pull-right">
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                            </span><!-- /.post-social -->
-                                        </div><!-- /.post-meta -->
-                                    </div><!-- /.entry-content -->
-                                </article><!-- /.post -->
-
-                            @foreach($artikel as $data)
-                                <article class="post type-post col-sm-6">
-                                    <div class="entry-thumbnail"><img src="{{ asset('assets/img/artikel/'.$data->foto)}}" alt="Thumbnail Image"></div><!-- /.entry-thumbnail -->
-                                    <div class="entry-content">
-                                        <span class="category"><a href="categories.html">Lifestyle</a></span><!-- /.category -->
-                                        <h2 class="entry-title"><a href="standard.html">{{ $data->judul }}</a></h2><!-- /.entry-title -->
-                                        <p>
-                                           {!! $data->konten !!}
-                                        </p>
-                                        <a href="standard.html" class="btn">Read more</a><!-- /.btn -->
-                                    </div><!-- /.entry-content -->
-                                </article><!-- /.post -->
-                                @endforeach
-                            </div><!-- /.default-posts -->
-
-                            <nav class="pagination pagination-01">
-                               <a href="#" class="previous-page hidden pull-left"><i class="fa fa-angle-double-left"></i> Previous Posts </a>
-                               <a href="#" class="next-page pull-right">Older Posts <i class="fa fa-angle-double-right"></i></a>
-                           </nav><!-- /.pagination -->
-                       </div>
-
-                       <div class="col-sm-4">
-                        <aside class="sidebar text-center">
-                            <div class="widget widget_about_author">
-                                <h3 class="widget-title">About me</h3><!-- /.widget-title -->
-                                <div class="widget-details">
-                                    <div class="author-avatar"><img src="{{ asset('assets/frontend/images/sidebar/a.jpg') }}" alt="Avatar" class="img-circle"></div><!-- /.author-avatar -->
-                                    <p>
-                                        Ahasellus rhoncus laoreet odio, sit amet rutrum metus aliquet quis. Sed sed nulla erat. Curabitur ullamcorper dum tortor.
-                                    </p>
-                                    <div class="author-social">
-                                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                    </div><!-- /.author-social -->
-                                </div><!-- /.widget-details -->
-                            </div><!-- /.widget -->
-
-                            <div class="widget widget_newsletter">
-                                <h3 class="widget-title">Newsletter</h3><!-- /.widget-title -->
-                                <div class="widget-details">
-                                    <form class="mc4wp-form" method="post">
-                                        <div class="mc4wp-form-fields"> 
-                                            <input class="form-control" type="email" name="EMAIL" placeholder="Email Address" required="">
-                                            <input type="submit" class="form-control" name="submit" value="Subscribe">
-                                        </div>
-                                        <div class="mc4wp-response"></div>
-                                    </form>
-                                </div><!-- /.widget-details -->
-                            </div><!-- /.widget -->
-
-                            <div class="widget widget_insta_feed">
-                                <h3 class="widget-title">Instagram</h3><!-- /.widget-title -->
-                                <div class="widget-details">
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/Converseee.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/10.jfif') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/offwhite.png') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/marii.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/11.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/6.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/7.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/8.jpg') }}" alt="Instagram Image"></a>
-                                    <a href="#"><img src="{{ asset('assets/frontend/images/sidebar/9.jpg') }}" alt="Instagram Image"></a>
-                                </div><!-- /.widget-details -->
-                            </div><!-- /.widget -->
-
-                            <div class="widget widget_recent_posts">
-                                <h3 class="widget-title">Recent Posts</h3><!-- /.widget-title -->
-                                <div class="widget-details">
-                                    <article class="post type-post media">
-                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/Converseee.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
-                                        <div class="entry-content media-body">
-                                            <h3 class="entry-title"><a href="standard.html">CONVERSE</a></h3><!-- /.entry-title -->
-                                            <span class="time"><time datetime="2017-12-05">May 12, 2017 @sephiyani_</time></span><!-- /.time -->
-                                        </div><!-- /.entry-content -->
-                                    </article><!-- /.post -->
-                                    <article class="post type-post media">
-                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a2.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
-                                        <div class="entry-content media-body">
-                                            <h3 class="entry-title"><a href="standard.html">Hitchhog is dangerous?</a></h3><!-- /.entry-title -->
-                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
-                                        </div><!-- /.entry-content -->
-                                    </article><!-- /.post -->
-                                    <article class="post type-post media">
-                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a3.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
-                                        <div class="entry-content media-body">
-                                            <h3 class="entry-title"><a href="standard.html">Dream on Zanzibar</a></h3><!-- /.entry-title -->
-                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
-                                        </div><!-- /.entry-content -->
-                                    </article><!-- /.post -->
-                                    <article class="post type-post media">
-                                        <div class="entry-thumbnail media-left pull-left"><img src="{{ asset('assets/frontend/images/sidebar/a4.jpg') }}" alt="Thumb Image"></div><!-- /.entry-thumbnail -->
-                                        <div class="entry-content media-body">
-                                            <h3 class="entry-title"><a href="standard.html">Happy Road Trip</a></h3><!-- /.entry-title -->
-                                            <span class="time"><time datetime="2017-12-05">May 12, 2017</time></span><!-- /.time -->
-                                        </div><!-- /.entry-content -->
-                                    </article><!-- /.post -->
-                                </div><!-- /.widget-details -->
-                            </div><!-- /.widget -->
-
-                            <div class="widget widget_ad">
-                                <div class="widget-details">
-                                    <a href="#" class="ad-banner"><img src="{{ asset('assets/frontend/images/sidebar/ad.jpg') }}" alt="Ad Banner"></a>
-                                </div><!-- /.widget-details -->
-                            </div><!-- /.widget -->
-                        </aside><!-- /.sidebar -->
-                    </div> 
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.padding -->
-    </section><!-- /.main-content -->
-
-
-
-    <section class="section-widget">
-        <div class="widget widget_insta_feed">
-            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/1.jpg') }}" alt="Instagram Image"></a></div>
-            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/2.jpg') }}" alt="Instagram Image"></a></div>
-            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/3.jpg') }}" alt="Instagram Image"></a></div>
-            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/4.jpg') }}" alt="Instagram Image"></a></div>
-            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/5.jpg') }}" alt="Instagram Image"></a></div>
-            <div class="col-sm-2"><a href="#"><img src="{{ asset('assets/frontend/images/ins/6.jpg') }}" alt="Instagram Image"></a></div>
-        </div><!-- /.widget -->
-    </section><!-- /.section-widget -->
-
-
-
-    <footer class="site-footer colophon">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css')}}">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+    <header class="site-navbar" role="banner">
+      <div class="site-navbar-top">
         <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+              <form action="" class="site-block-top-search">
+                <span class="icon icon-search2"></span>
+                <input type="text" class="form-control border-0" placeholder="Search">
+              </form>
+            </div>
+
+            <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+              <div class="site-logo">
+                <a href="index.html" class="js-logo-clone">Shoppers</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+              <div class="site-top-icons">
+                <ul>
+                  <li><a href="#"><span class="icon icon-person"></span></a></li>
+                  <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
+                  <li>
+                    <a href="cart.html" class="site-cart">
+                      <span class="icon icon-shopping_cart"></span>
+                      <span class="count">2</span>
+                    </a>
+                  </li> 
+                  <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                </ul>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </div> 
+      <nav class="site-navigation text-right text-md-center" role="navigation">
+        <div class="container">
+          <ul class="site-menu js-clone-nav d-none d-md-block">
+            <li class="has-children active">
+              <a href="index.html">Home</a>
+              <ul class="dropdown">
+                <li><a href="#">Menu One</a></li>
+                <li><a href="#">Menu Two</a></li>
+                <li><a href="#">Menu Three</a></li>
+                <li class="has-children">
+                  <a href="#">Sub Menu</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Menu One</a></li>
+                    <li><a href="#">Menu Two</a></li>
+                    <li><a href="#">Menu Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="has-children">
+              <a href="about.html">About</a>
+              <ul class="dropdown">
+                <li><a href="#">Menu One</a></li>
+                <li><a href="#">Menu Two</a></li>
+                <li><a href="#">Menu Three</a></li>
+              </ul>
+            </li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section site-section-sm site-blocks-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">
+            <div class="icon mr-4 align-self-start">
+              <span class="icon-truck"></span>
+            </div>
+            <div class="text">
+              <h2 class="text-uppercase">Free Shipping</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon mr-4 align-self-start">
+              <span class="icon-refresh2"></span>
+            </div>
+            <div class="text">
+              <h2 class="text-uppercase">Free Returns</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon mr-4 align-self-start">
+              <span class="icon-help"></span>
+            </div>
+            <div class="text">
+              <h2 class="text-uppercase">Customer Support</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section site-blocks-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
+            <a class="block-2-item" href="#">
+              <figure class="image">
+                <img src="{{asset('assets/frontend/images/women.jpg')}}" alt="" class="img-fluid">
+              </figure>
+              <div class="text">
+                <span class="text-uppercase">Collections</span>
+                <h3>Women</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <a class="block-2-item" href="#">
+              <figure class="image">
+                <img src="{{asset('assets/frontend/images/children.jpg')}}" alt="" class="img-fluid">
+              </figure>
+              <div class="text">
+                <span class="text-uppercase">Collections</span>
+                <h3>Children</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <a class="block-2-item" href="#">
+              <figure class="image">
+                <img src="{{asset('assets/frontend/images/men.jpg')}}" alt="" class="img-fluid">
+              </figure>
+              <div class="text">
+                <span class="text-uppercase">Collections</span>
+                <h3>Men</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section block-3 site-blocks-2 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 site-section-heading text-center pt-4">
+            <h2>Picture</h2>
+          </div>
+</div>
+
+        <?php
+        $artikel = App\Artikel::all();
+        ?>
+        @foreach($artikel as $data)
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="nonloop-block-3 owl-carousel">
+              <div class="item">
+                <div class="block-4 text-center">
+                  <figure class="block-4-image">
+                    <img src="{{asset('assets/frontend/images/download.jpg')}}" alt="Image placeholder" class="img-fluid">
+                  </figure>
+                  <div class="block-4-text p-4">
+                    <h3><a href="#">{{$data->judul}}</a></h3>
+                  </div>
+                </div>
+              </div>
+              @endforeach
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section block-8">
+      <div class="container">
+        <div class="row justify-content-center  mb-5">
+          <div class="col-md-7 site-section-heading text-center pt-4">
+            <h2>Big Sale!</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-7 mb-5">
+            <a href="#"><img src="{{asset('assets/frontend/images/blog_1.jpg')}}" alt="Image placeholder" class="img-fluid rounded"></a>
+          </div>
+          <div class="col-md-12 col-lg-5 text-center pl-md-5">
+            <h2><a href="#">50% less in all items</a></h2>
+            <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span> September 3, 2018</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
+            <p><a href="#" class="btn btn-primary btn-sm">Shop Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="row">
-                <div class="col-sm-3">
-                    <a href="./" class="footer-logo pull-left"><img src="{{ asset('assets/frontend/images/logo4.png') }}" alt="Logo"></a><!-- /.footer-logo -->
-                </div>
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Navigations</h3>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><a href="#">Sell online</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Shopping cart</a></li>
+                  <li><a href="#">Store builder</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><a href="#">Mobile commerce</a></li>
+                  <li><a href="#">Dropshipping</a></li>
+                  <li><a href="#">Website development</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><a href="#">Point of sale</a></li>
+                  <li><a href="#">Hardware</a></li>
+                  <li><a href="#">Software</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address">SMK Assalaam Bandung </li>
+                <li class="phone"><a href="tel://23923929210">083824212387</a></li>
+                <li class="email">sephiyanigabriela@gmail.com</li>
+              </ul>
+</div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script data-cfasync="false" src="{{asset('assets/frontend/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </div>
 
-                <div class="col-sm-6">
-                    <div class="copyright text-center">
-                        © <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div><!-- /.copyright -->
-                </div>
+  <script src="{{asset('assets/frontend/js/jquery-3.3.1.min.js')}}"></script>
+  <script src="{{asset('assets/frontend/js/jquery-ui.js')}}"></script>
+  <script src="{{asset('assets/frontend/js/popper.min.js')}}"></script>
+  <script src="{{asset('assets/frontend/js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('assets/frontend/js/owl.carousel.min.js')}}"></script>
+  <script src="{{asset('assets/frontend/js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{asset('assets/frontend/js/aos.js')}}"></script>
 
-                <div class="col-sm-3">
-                    <div class="footer-social pull-right">
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                    </div><!-- /.footer-social -->
-                </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </footer><!-- /.site-footer -->
-
-</div><!-- /.overlay -->
-
-<script src="{{ asset('assets/frontend/assets/js/plugins.js') }}"></script>
-<script src="{{ asset('assets/frontend/assets/js/main.js') }}"></script>
-</body>
+  <script src="{{asset('assets/frontend/js/main.js')}}"></script>
+    
+  </body>
 </html>

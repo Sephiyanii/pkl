@@ -17,8 +17,8 @@ class ArtikelsTag extends Migration
             $table->increments('id');
             $table->unsignedInteger('artikel_id');
             $table->unsignedInteger('tag_id');
-            $table->foreign('artikel_id')->references('id')->on('artikels')->onDelete('CASCADE');
-            $table->foreign('tag_id')->references('id')->on('tags')->onDelete('CASCADE');
+            $table->foreign('artikel_id')->references('id')->on('artikels');
+            $table->foreign('tag_id')->references('id')->on('tags');
             $table->timestamps();
         });
     }

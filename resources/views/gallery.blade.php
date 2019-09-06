@@ -9,18 +9,18 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png')}}">
 
     <!-- Import Icon Packs -->
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/font-awesome.min.css')}}">
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/elegent-icons.css')}}">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="assets/css/elegent-icons.css')}}">
 
     <!-- Import External Scrpit CSS Files -->
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/bootstrap.min.css')}}">
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/owl.carousel.css')}}">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css')}}">
 
     <!-- Import Template CSS Files -->
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/style.css')}}">
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/header.css')}}">
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/themes.css')}}">
-    <link rel="{{ asset('assets/frontend/stylesheet" href="assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="assets/css/style.css')}}">
+    <link rel="stylesheet" href="assets/css/header.css')}}">
+    <link rel="stylesheet" href="assets/css/themes.css')}}">
+    <link rel="stylesheet" href="assets/css/responsive.css')}}">
 
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js')}}"></script> -->
 
